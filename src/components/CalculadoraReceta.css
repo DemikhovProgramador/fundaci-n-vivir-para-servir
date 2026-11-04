@@ -1,0 +1,207 @@
+
+.calculadora-receta {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #26342d;
+  background: #ffffff;
+  border: 1px solid #e0e8e2;
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.calculadora-encabezado {
+  margin-bottom: 24px;
+}
+
+.calculadora-etiqueta {
+  color: #31724b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.calculadora-encabezado h2 {
+  margin: 8px 0;
+  font-size: 28px;
+}
+
+.calculadora-encabezado p {
+  margin: 0;
+  color: #637067;
+  line-height: 1.6;
+}
+
+.calculadora-formulario {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: end;
+  padding: 20px;
+  background: #f6f9f6;
+  border-radius: 12px;
+}
+
+.calculadora-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.calculadora-campo label {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.calculadora-campo input,
+.calculadora-campo select {
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  color: #26342d;
+  background: white;
+  border: 1px solid #cad7cd;
+  border-radius: 8px;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.calculadora-boton {
+  grid-column: 1 / -1;
+  min-height: 46px;
+  padding: 12px 18px;
+  color: white;
+  background: #287548;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.calculadora-boton:hover {
+  background: #205e3a;
+}
+
+.calculadora-boton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.calculadora-error {
+  margin-top: 20px;
+  padding: 14px;
+  color: #8b2525;
+  background: #fff0f0;
+  border: 1px solid #f0c8c8;
+  border-radius: 8px;
+}
+
+.calculadora-resultados {
+  margin-top: 28px;
+}
+
+.calculadora-resultados h3 {
+  margin: 20px 0 12px;
+}
+
+.calculadora-estado {
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.calculadora-estado h3 {
+  margin: 0 0 12px;
+}
+
+.calculadora-estado p {
+  margin: 6px 0;
+}
+
+.estado-correcto {
+  color: #215b37;
+  background: #edf8f0;
+  border: 1px solid #b9dfc4;
+}
+
+.estado-atencion {
+  color: #7b4b0c;
+  background: #fff7e8;
+  border: 1px solid #efd7a5;
+}
+
+.calculadora-tabla-contenedor {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.calculadora-tabla {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.calculadora-tabla th,
+.calculadora-tabla td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e3e9e4;
+  white-space: nowrap;
+}
+
+.calculadora-tabla th {
+  background: #f3f7f3;
+}
+
+.calculadora-faltante {
+  color: #b42318;
+  font-weight: 700;
+}
+
+.calculadora-disponible {
+  color: #237344;
+  font-weight: 600;
+}
+
+.calculadora-lista-faltantes {
+  margin-top: 20px;
+  padding: 16px;
+  background: #fff8ed;
+  border-radius: 10px;
+}
+
+.calculadora-lista-faltantes h3 {
+  margin-top: 0;
+}
+
+.calculadora-lista-faltantes li {
+  margin: 8px 0;
+}
+
+.calculadora-nota {
+  margin-top: 20px;
+  color: #68746b;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 650px) {
+  .calculadora-receta {
+    padding: 16px;
+  }
+
+  .calculadora-encabezado h2 {
+    font-size: 23px;
+  }
+
+  .calculadora-formulario {
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+
+  .calculadora-boton {
+    grid-column: auto;
+  }
+}

@@ -1,0 +1,11 @@
+# Dependencias
+node_modules/
+
+# Archivos de compilación
+dist/
+
+# Variables de entorno y respaldos
+.env*
+
+# Archivos del sistema
+.DS_Store
